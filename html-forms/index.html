@@ -9,9 +9,15 @@
 <body>
   <h1>Coding Form</h1>
   <form>
-    <label for="email">Email</label> <br>
-    <input id="email" type="text" name="email"> <br>
-    <label for="drop-down">Why is coding cool?</label> <br>
+    <div>
+      <label for="email">Email</label>
+    </div>
+    <div>
+      <input id="email" type="text" name="email">
+    </div>
+    <div>
+      <label for="drop-down">Why is coding cool?</label>
+    </div>
     <select id="drop-down">
       <option value="Select an option">Select an option</option>
       <option value="Because it's intersting">Because it's intersting</option>
@@ -19,16 +25,22 @@
       <option value="Because it's powerful">Because it's powerful</option>
     </select>
     <p>Favorite Language (choose one)</p>
-    <input id="html-radio" type="radio" name="language">
-    <label for="html-radio">HTML</label>
-    <input id="css-radio" type="radio" name="language">
-    <label for="css-radio">CSS</label>
-    <input id="javascript-radio" type="radio" name="language">
-    <label for="javascript-radio">JavaScript</label>
+    <div>
+      <input id="html-radio" type="radio" name="language">
+      <label for="html-radio">HTML</label>
+      <input id="css-radio" type="radio" name="language">
+      <label for="css-radio">CSS</label>
+      <input id="javascript-radio" type="radio" name="language">
+      <label for="javascript-radio">JavaScript</label>
+    </div>
     <p>Would you like to sign up for more information?</p>
-    <input id="check" type="checkbox" name="check">
-    <label for="check">Sign me up!</label> <br>
-    <label for="comments">Comments</label> <br>
+    <div>
+      <input id="check" type="checkbox" name="check">
+      <label for="check">Sign me up!</label>
+    </div>
+    <div>
+      <label for="comments">Comments</label>
+    </div>
     <textarea id="comments" rows="8" cols="30"></textarea> <br>
     <input type="submit">
   </form>
