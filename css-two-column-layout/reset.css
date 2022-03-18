@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  text-align: left;
+  font-family: Karla, sans-serif;
+}
+
+img {
+  width: 100%;
+}
