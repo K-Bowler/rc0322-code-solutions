@@ -1,0 +1,83 @@
+.container {
+  max-width: 55rem;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+.display {
+  display: flex;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.col-half {
+  flex-basis: calc(100% / 2);
+}
+
+.col-one-fourth {
+  flex-basis: calc(100% / 4);
+}
+
+.col-three-fourths {
+  flex-basis: calc(100% * 3 / 4);
+}
+
+.inline {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.big-text {
+  font-size: 3rem;
+}
+
+.p-font {
+  color: rgb(102 102 102);
+  line-height: 1.75;
+}
+
+.head-space {
+  padding: 0 100px;
+  margin-bottom: 50px;
+}
+
+.soft-space {
+  margin-right: 40px;
+  margin-bottom: 50px;
+}
+
+.practice-space {
+  margin-left: 16px;
+  margin-bottom: 50px;
+}
+
+.circ-space {
+  margin-right: 50px;
+}
+
+.data-space {
+  margin-left: 16px;
+}
+
+.center {
+  text-align: center;
+}
+
+.learn-btn {
+  width: 12rem;
+  height: 2.5rem;
+  margin-top: 50px;
+  font-weight: bold;
+  color: rgb(212 87 81);
+  background-color: transparent;
+  border: 2px solid rgb(212 87 81);
+}
