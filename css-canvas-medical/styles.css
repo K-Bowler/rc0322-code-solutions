@@ -1,0 +1,136 @@
+.container {
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.display {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.col-half {
+  flex-basis: calc(100% / 2);
+}
+
+.col-one-fifth {
+  flex-basis: calc(100% / 5);
+}
+
+.avenir-font {
+  font-family: avenir, sans-serif;
+}
+
+.header {
+  max-width: 75rem;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.header-border {
+  width: 100%;
+  border-bottom: 2px solid lightgrey;
+  margin-top: 10px;
+}
+
+.header-p {
+  font-size: 18px;
+  color: rgb(39 39 39 / 66.4%);
+  padding-right: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.contact-btn {
+  width: 125px;
+  height: 50px;
+  color: white;
+  background-color: rgb(41 68 100);
+  border: none;
+  border-radius: 5px;
+  font-family: avenir, sans-serif;
+  font-size: 18px;
+}
+
+.center-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-margin {
+  max-width: 75rem;
+  margin: 80px auto;
+  position: relative;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(0.5);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text {
+  color: white;
+  position: absolute;
+  top: 70px;
+  left: 90px;
+}
+
+.hero-h1 {
+  padding-right: 35rem;
+  font-size: 3rem;
+}
+
+.hero-p {
+  font-family: avenir, sans-serif;
+  font-size: 1.1rem;
+  padding-right: 34rem;
+  line-height: 1.75;
+}
+
+.hero-btn {
+  width: 225px;
+  height: 60px;
+  margin-top: 20px;
+  color: white;
+  background-color: rgb(41 68 100);
+  border: none;
+  border-radius: 5px;
+  font-family: avenir, sans-serif;
+  font-size: 24px;
+}
+
+.location-background {
+  color: rgb(112 112 112);
+  background-color: rgb(250 250 250);
+}
+
+.location-background-bot {
+  padding-bottom: 50px;
+  color: rgb(112 112 112);
+  background-color: rgb(250 250 250);
+  border-bottom: 2px solid lightgrey;
+}
+
+.location-h2 {
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.location-p {
+  margin-bottom: 50px;
+  padding: 0 32rem;
+  font-family: avenir, sans-serif;
+}
