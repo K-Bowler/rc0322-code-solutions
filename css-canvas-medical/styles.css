@@ -49,6 +49,12 @@
   text-align: center;
 }
 
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .contact-btn {
   width: 125px;
   height: 50px;
@@ -129,8 +135,24 @@
   font-size: 30px;
 }
 
+.location-h3 {
+  font-weight: normal;
+  margin: 25px 0;
+}
+
 .location-p {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
+  line-height: 2;
   padding: 0 32rem;
   font-family: avenir, sans-serif;
+}
+
+.learn-more {
+  max-width: 75rem;
+  margin: 30px auto;
+  color: rgb(112 112 112);
+}
+
+.footer-1 {
+  background-color: rgb(82 83 81);
 }
