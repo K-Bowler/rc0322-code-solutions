@@ -53,7 +53,7 @@ function doubleAll(numbers) {
 function getKeys(object) {
   var keys = [];
   for (var x in object) {
-    keys.push(object = x);
+    keys.push(x);
 
   }
   return keys;
