@@ -1,4 +1,6 @@
 /* exported getWords */
 function getWords(string) {
-  return string.split(' ');
+  var stringArray = [];
+  var splitString = string.split(' ');
+  return stringArray.push(splitString);
 }
