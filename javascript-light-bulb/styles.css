@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+}
+
+.switch-on {
+  background-color: rgb(254 249 241);
+}
+
+.switch-off {
+  background-color: rgb(17 17 17);
+}
+
+.container {
+  height: 100vh;
+  max-width: 800px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  height: 100vh;
+}
+
+.col-full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.light {
+  border: none;
+  border-radius: 100px;
+  width: 10rem;
+  height: 10rem;
+  background-color: rgb(250 234 132);
+  box-shadow: 0 0 20px rgb(250 234 132);
+}
+
+.dark {
+  border: none;
+  border-radius: 100px;
+  width: 10rem;
+  height: 10rem;
+  background-color: rgb(37 37 37);
+  box-shadow: 0 -8px 1px 5px rgb(12 12 12);
+}
