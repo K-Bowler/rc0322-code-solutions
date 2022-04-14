@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  margin-top: 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+i {
+  width: 100%;
+}
+
+.icon-size {
+  font-size: 5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.image {
+  margin-bottom: 3rem;
+}
+
+.center {
+  text-align: center;
+  align-items: center;
+}
+
+.circle-display {
+  display: inline;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.col-third {
+  flex-basis: calc(100% / 3);
+}
+
+.col-fifth {
+  flex-basis: calc(100% / 5);
+}
