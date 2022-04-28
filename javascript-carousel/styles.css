@@ -1,6 +1,6 @@
 body {
-  margin: 0;
-  margin-top: 2rem;
+  margin: auto;
+  max-width: 1200px;
 }
 
 img {
@@ -13,11 +13,12 @@ i {
 
 .icon-size {
   font-size: 5rem;
+  width: 40px;
 }
 
 .container {
   max-width: 1200px;
-  margin: auto;
+  margin-top: 6rem;
 }
 
 .row {
@@ -49,4 +50,21 @@ i {
 
 .col-fifth {
   flex-basis: calc(100% / 5);
+}
+
+#cycle-container {
+  width: 256px;
+  margin: auto;
+}
+
+.cycle:hover {
+  cursor: pointer;
+}
+
+#left-arrow:hover {
+  cursor: pointer;
+}
+
+#right-arrow:hover {
+  cursor: pointer;
 }
