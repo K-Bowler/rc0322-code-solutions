@@ -1,0 +1,44 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.typing-text {
+  font-size: 4rem;
+  color: rgb(0 0 0 / 30%);
+  display: flex;
+  font-family: "Roboto Slab", serif;
+}
+
+.space {
+  height: 84.44px;
+  width: 20px;
+  display: inline-block;
+}
+
+.active {
+  border-bottom: 6px solid black;
+}
+
+.correct {
+  color: lime;
+}
+
+.incorrect {
+  color: red;
+}
