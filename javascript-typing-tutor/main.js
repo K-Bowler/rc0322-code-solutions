@@ -44,7 +44,7 @@ $resetBtn.addEventListener('click', function (event) {
   currentIndex = 0;
   totalPresses = 0;
   totalCorrect = 0;
-  $accuracy.textContent = '0%';
+  $accuracy.textContent = '';
   $resetBtn.classList.add('hidden');
   $typingText[currentIndex].classList.add('active');
 });

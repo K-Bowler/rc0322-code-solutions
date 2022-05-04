@@ -73,12 +73,12 @@
   border-radius: 15px;
   color: white;
   background-color: #404087;
+}
 
-  .correct {
-    color: lime;
-  }
+.correct {
+  color: lime;
+}
 
-  .incorrect {
-    color: red;
-  }
+.incorrect {
+  color: red;
 }
