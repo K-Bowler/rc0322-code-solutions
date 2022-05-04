@@ -1,3 +1,11 @@
+#accuracy {
+  font-size: 1.5rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
 .container {
   max-width: 1200px;
   margin: auto;
@@ -35,10 +43,42 @@
   border-bottom: 6px solid black;
 }
 
-.correct {
-  color: lime;
+.accuracy-position {
+  position: absolute;
+  left: 49rem;
+  bottom: 15rem;
 }
 
-.incorrect {
-  color: red;
+.accuracy-text {
+  font-size: 1.5rem;
+  font-family: "Roboto Slab", serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.reset-position {
+  position: absolute;
+  left: 48rem;
+  bottom: 10rem;
+}
+
+.reset-btn {
+  font-size: 1.5rem;
+  font-family: "Roboto Slab", serif;
+  width: 8rem;
+  height: 3rem;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  background-color: #404087;
+
+  .correct {
+    color: lime;
+  }
+
+  .incorrect {
+    color: red;
+  }
 }
