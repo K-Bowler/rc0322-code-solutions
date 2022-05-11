@@ -4,7 +4,7 @@ const fs = require('fs');
 const data = require('./data.json');
 const jsonMiddleware = express.json();
 
-app.get('/api/grades', (req, res) => {
+app.get('/api/notes', (req, res) => {
   const notesArray = [];
 
   for (const property in data.notes) {
@@ -56,16 +56,47 @@ app.delete('/api/notes/:id', (req, res) => {
 
   if (Number.isNaN(id) || !Number.isInteger(id) || id < 1) {
     res.status(400).json('error: id must be a positive integer');
+
   } else if (!data.notes[id]) {
     res.status(404).json(`error: no note found with id ${id}`);
-  } else {
-    res.json(data.notes[id]);
+    return;
   }
-  fs.writeFile('./data.json', JSON.stringify(data, null, 2), 'utf8', err => {
+  delete data.notes[id];
+  fs.writeFile('data.json', JSON.stringify(data, null, 2), err => {
     if (err) {
       res.status(500).json('error: an unexpected error occured');
     } else {
       res.sendStatus(204);
+    }
+  });
+});
+
+app.put('/api/notes/:id', (req, res) => {
+  const content = req.body.content;
+  const id = Number(req.params.id);
+
+  if (!content) {
+    res.status(400).json('error: content is a required field');
+    return;
+  }
+
+  if (!data.notes[id]) {
+    res.status(404).json(`error: no note found with id ${id}`);
+    return;
+  }
+
+  const note = {
+    id: id,
+    content: content
+  };
+
+  data.notes[note.id] = note;
+
+  fs.writeFile('./data.json', JSON.stringify(data, null, 2), 'utf8', err => {
+    if (err) {
+      res.status(500).json('error: an unexpected error occured');
+    } else {
+      res.json(note);
     }
   });
 });
