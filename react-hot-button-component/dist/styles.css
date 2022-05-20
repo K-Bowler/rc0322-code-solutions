@@ -1,0 +1,45 @@
+.btn {
+  border: none;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.freeze {
+  background-color: darkblue;
+  color: white;
+}
+
+.colder {
+  background-color: blue;
+  color: white;
+}
+
+.cold {
+  background-color: lightblue;
+  color: white;
+}
+
+.luke-warm {
+  background-color: lightgoldenrodyellow;
+  color: white;
+}
+
+.warm {
+  background-color: yellow;
+  color: white;
+}
+
+.hot {
+  background-color: orange;
+  color: white;
+}
+
+.red-hot {
+  background-color: red;
+  color: white;
+}
+
+.white-hot {
+  background-color: white;
+  color: black;
+}
