@@ -1,21 +1,41 @@
-// import React from 'react';
+import React from 'react';
 
-// class toggleSwitch extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.clicked = this.clicked.bind(this);
-//     this.state = { totalClicks: 0 };
-//   }
+class ToggleSwitch extends React.Component {
+  constructor(props) {
+    super(props);
+    this.clicked = this.clicked.bind(this);
+    this.state = { toggleSwitch: false };
+  }
 
-//   clicked() {
-//     this.setState({ totalClicks: this.state.totalClicks + 1 });
-//   }
+  clicked() {
+    this.setState({ toggleSwitch: !this.state.toggleSwitch });
+  }
 
-//   render() {
-//     const totalClicks = this.state.totalClicks;
-//     const btnWarmth = 'freeze';
-//     return <button className={`btn ${btnWarmth}`} onClick={this.clicked}>Hot Button</button>;
-//   }
-// }
+  render() {
+    let btnClass = 'btn-on';
+    let divClass = 'switch-on';
+    let textClass = 'text-on';
+    let spanText = 'ON';
+    if (this.state.toggleSwitch === false) {
+      btnClass = 'btn-off';
+      divClass = 'switch-off';
+      textClass = 'text-off';
+      spanText = 'OFF';
+    } else {
+      btnClass = 'btn-on';
+      divClass = 'switch-on';
+      textClass = 'text-on';
+      spanText = 'ON';
+    }
+    return (
+    <div>
+      <button className={ btnClass } onClick={this.clicked}>
+        <div className={ divClass }></div>
+      </button>
+      <span className={ textClass }> { spanText } </span>
+    </div>
+    );
+  }
+}
 
-// export default toggleSwitch;
+export default ToggleSwitch;

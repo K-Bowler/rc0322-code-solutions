@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import toggleSwitch from './toggle-switch';
+import ToggleSwitch from './toggle-switch.jsx';
 
 const container = document.querySelector('#root');
 const root = ReactDOM.createRoot(container);
 
-root.render(< toggleSwitch />);
+root.render(< ToggleSwitch />);
